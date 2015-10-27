@@ -87,7 +87,11 @@
             "猎人",
             "共有者",
             "妖狐",
-            "埋毒者"});
+            "埋毒者",
+            "陷阱师",
+            "超常现象研究者",
+            "策士",
+            "骗子"});
             this.YCharCombo.Location = new System.Drawing.Point(295, 10);
             this.YCharCombo.Name = "YCharCombo";
             this.YCharCombo.Size = new System.Drawing.Size(121, 20);
@@ -102,7 +106,7 @@
             this.HNameLabel.Name = "HNameLabel";
             this.HNameLabel.Size = new System.Drawing.Size(65, 12);
             this.HNameLabel.TabIndex = 4;
-            this.HNameLabel.Text = "苦主名字：";
+            this.HNameLabel.Text = "目標名字：";
             // 
             // YCharBox
             // 
@@ -129,7 +133,8 @@
             this.HCharCombo.FormattingEnabled = true;
             this.HCharCombo.Items.AddRange(new object[] {
             "村人",
-            "人狼"});
+            "人狼",
+            "吸血鬼"});
             this.HCharCombo.Location = new System.Drawing.Point(295, 67);
             this.HCharCombo.Name = "HCharCombo";
             this.HCharCombo.Size = new System.Drawing.Size(121, 20);
@@ -143,7 +148,7 @@
             this.HCharLabel.Name = "HCharLabel";
             this.HCharLabel.Size = new System.Drawing.Size(65, 12);
             this.HCharLabel.TabIndex = 8;
-            this.HCharLabel.Text = "指定角色：";
+            this.HCharLabel.Text = "指定結果：";
             // 
             // ActBox
             // 

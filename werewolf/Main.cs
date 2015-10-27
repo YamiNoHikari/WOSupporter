@@ -51,6 +51,18 @@ namespace werewolf
                 case 9://埋毒者
                     YCharStat = 0;
                     break;
+                case 10://陷阱师
+                    YCharStat = 1;
+                    break;
+                case 11://超常现象研究者
+                    YCharStat = 2;
+                    break;
+                case 12://策士
+                    YCharStat = 1;
+                    break;
+                case 13://骗子
+                    YCharStat = 2;
+                    break;
             }
             switch (YCharStat)
             {
@@ -113,10 +125,10 @@ namespace werewolf
             HChar = HCharCombo.SelectedItem.ToString();
             switch (YCharID)
             {
-                case 2:
+                case 2://人狼
                     ActBox.Text = "以 " + YName + " 为首的人狼们决定今晚袭击 " + HName +"。";
                     break;
-                case 3:
+                case 3://占卜師
                     {
                         if (DivinationFailed.Checked == false)
                             ActBox.Text = YName + " 占卜了 " + HName + " 的身份，他是 " + HChar + "。";
@@ -127,13 +139,30 @@ namespace werewolf
                 case 4:
                     ActBox.Text = "根据 " + YName + " 的灵能结论，被处刑的 " + HName + " 是 " + HChar + "。";
                     break;
-                case 6:
+                case 6://獵人
                     {
                         if (HunterBox.Checked == false)
                             ActBox.Text = YName + " 守护了 " + HName+"。";
                         else
                             ActBox.Text = YName + " 成功的守护了 " + HName + "。";
                     }
+                    break;
+                case 10://陷阱师
+                    ActBox.Text = YName + " 的陷阱守护了 " + HName +"。";
+                    break;
+                case 11://超常现象研究者
+                    {
+                        if (HCharCombo.SelectedIndex == 0)
+                            ActBox.Text = YName + " 调查了 " + HName + " 的周边，发现全员都是村人。";
+                        else
+                            ActBox.Text = YName + " 调查了 " + HName + " 的周边，发现了 "+HChar+ " 活动的迹象。";
+                    }
+                    break;
+                case 12://策士
+                    ActBox.Text = YName + " 尝试了策反 " + HName + "。";
+                    break;
+                case 13://骗子
+                    ActBox.Text = "虽然不是很自信，根据骗子占卜的结果 " + HName + " 大概是 "+HChar+ "，大概。";
                     break;
             }
             if (TimeBox.Checked == true)//檢查是否添加時間戳
