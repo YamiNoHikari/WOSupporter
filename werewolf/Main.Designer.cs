@@ -199,6 +199,7 @@
             this.AboutButton.TabIndex = 13;
             this.AboutButton.Text = "關於程式";
             this.AboutButton.UseVisualStyleBackColor = true;
+            this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
             // ExitButton
             // 

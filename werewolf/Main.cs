@@ -12,8 +12,8 @@ namespace werewolf
     {
         string YName = "";//你的名字
         string YChar = "";//你的角色
-        string HName = "";//苦主的名字
-        string HChar = "";//苦主的角色
+        string HName = "";//目標的名字
+        string HChar = "";//目標的角色
         string TimeString = "";//時間標記
         int YCharStat = 0;//用於標示各項可用性狀態
         int YCharID = 0;//用於表示偽裝的第幾種角色
@@ -186,6 +186,12 @@ namespace werewolf
         private void Werewolf_Close(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            AboutForm a = new AboutForm();
+            a.Show();
         }
     }
 
